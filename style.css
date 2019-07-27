@@ -29,7 +29,7 @@ form {
 }
 
 textarea {
-  width: 100%;
+  display:none;
 }
 
 ul {
