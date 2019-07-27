@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-  padding: 16px;
+  padding: 16px 100px;
   margin: 15px;
   background: #93b5b3;
   color: white;
