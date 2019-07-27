@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f2f6f5;
+  background: #231F21;
 }
 
 #wrapper {
@@ -41,7 +41,7 @@ ul {
 li {
   padding: 100px 16px;
   margin: 15px;
-  background: #93b5b3;
+  background: #A9AEA4;
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -49,7 +49,7 @@ li {
 }
 
 .button {
-  background-color: #63707e;
+  background-color: #D2B85D;
   border: none;
   color: white;
   padding: 15px 32px;
