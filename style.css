@@ -16,6 +16,7 @@ ul, form {float: left;}
 
 h1, ul, label, p {
   font-family: 'Voltaire', sans-serif;
+  color: white;
 }
 
 h1, p {
@@ -41,7 +42,7 @@ ul {
 li {
   padding: 100px 16px;
   margin: 15px;
-  background: #A9AEA4;
+  background: #3F4C4E;
   color: white;
   border-radius: 10px;
   text-align: center;
