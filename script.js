@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#names').empty();
 
             // Create name ideas by combining two random words
-            for (var i = 0; i < 1; i++) {
+            for (var i = 0; i < 3; i++) {
               $('#names').append("<li>" +
                              randomName(words) +
                             "</li>");
