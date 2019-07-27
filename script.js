@@ -18,7 +18,7 @@ $(document).ready(function () {
             // Create name ideas by combining two random words
             for (var i = 0; i < 3; i++) {
               randomWords = randomName(words).replace(/ +(?= )/g,'');
-              $('#names').append("<a target=\"_blank\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fdigitallawyer.github.io%2Flaw-firm-merger-generator%2F&text=The%20future%20of%20law%20might%20well%20be%20..." + randomWords + "%20%23FutureLaw%20%23Mergers\"><li>" +
+              $('#names').append("<a target=\"_blank\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fdigitallawyer.github.io%2Flaw-firm-merger-generator%2F&text=" + randomWords + "... The%20future%20of%20law?%20%23FutureLaw%20%23Mergers\"><li>" +
                               randomWords +
                             "</li></a>");
             }
