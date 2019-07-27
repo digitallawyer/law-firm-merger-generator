@@ -6,49 +6,53 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-      var index,
-          prevIndex,
-          s,
-          words;
+      $(document).ready(function () {
 
-      $('button').click(function() {
+        var index,
+            prevIndex,
+            s,
+            words;
 
-        // Store all the words in an array.
-        words = $('#wordbank').val().split('\n');
+        $('button').click(function() {
 
-        if (words.length > 1) {
+          // Store all the words in an array.
+          words = $('#wordbank').val().split('\n');
 
-          // Remove all child nodes from the <ul>
-          $('#names').empty();
+          if (words.length > 1) {
 
-          // Create name ideas by combining two random words
-          for (var i = 0; i < 5; i++) {
-            $('#names').append("<li>" +
-                           randomName(words) +
-                          "</li>");
+            // Remove all child nodes from the <ul>
+            $('#names').empty();
+
+            // Create name ideas by combining two random words
+            for (var i = 0; i < 5; i++) {
+              $('#names').append("<li>" +
+                             randomName(words) +
+                            "</li>");
+            }
+
+          } else {
+            alert("You need at least 2 words for this to work.");
           }
 
-        } else {
-          alert("You need at least 2 words for this to work.");
+        });
+
+
+        function randomWord(wordbank) {
+          // Avoid duplicate names
+          while (prevIndex == index)
+            index = Math.round(Math.random() * (wordbank.length - 1));
+
+          prevIndex = index;
+          return wordbank[index];
+        }
+
+        function randomName(wordbank) {
+          // Sometimes an "s" will be added to the end of the name.
+          s = Math.round(Math.random() * 1) ? "" : "s";
+          return randomWord(wordbank) + " " + randomWord(wordbank) + s;
         }
 
       });
-
-
-      function randomWord(wordbank) {
-        // Avoid duplicate names
-        while (prevIndex == index)
-          index = Math.round(Math.random() * (wordbank.length - 1));
-
-        prevIndex = index;
-        return wordbank[index];
-      }
-
-      function randomName(wordbank) {
-        // Sometimes an "s" will be added to the end of the name.
-        s = Math.round(Math.random() * 1) ? "" : "s";
-        return randomWord(wordbank) + " " + randomWord(wordbank) + s;
-      }
     </script>
   </head>
   <body>
