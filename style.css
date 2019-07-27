@@ -9,8 +9,7 @@ body {
 }
 
 #wrapper {
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 ul, form {float: left;}
@@ -25,7 +24,8 @@ h1, p {
 }
 
 form {
-  width: 20%;
+  width: 100%;
+  text-align:center;
 }
 
 textarea {
