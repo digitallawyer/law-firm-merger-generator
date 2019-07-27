@@ -12,8 +12,6 @@ body {
   max-width: 100%;
 }
 
-ul, form {float: left;}
-
 h1, ul, label, p {
   font-family: 'Voltaire', sans-serif;
   color: white;
@@ -40,7 +38,10 @@ ul {
   list-style: none;
   width: 100%;
   margin: 0;
-  padding: 42px 50px;
+  padding: 42px 0px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -51,9 +52,6 @@ li {
   border-radius: 10px;
   text-align: center;
   font-size: 1.8em;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button {
@@ -69,6 +67,10 @@ li {
 
 a {
   color: #D2B85D;
+}
+
+#names a {
+  text-decoration: none;
 }
 
 .footer {
