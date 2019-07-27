@@ -51,6 +51,9 @@ li {
   border-radius: 10px;
   text-align: center;
   font-size: 1.8em;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
