@@ -1,0 +1,50 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+#wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ul, form {float: left;}
+
+h1, ul, label, p {
+  font-family: 'Voltaire', sans-serif;
+  color: white;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form {
+  width: 20%;
+}
+
+textarea {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 16px;
+  margin: 15px;
+  background: #444;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
