@@ -61,12 +61,14 @@ li {
 }
 
 a {
-  color: #1a0dab;
+  color: #D2B85D;
 }
 
 .footer {
   position: absolute;
-  bottom: 10;
+  bottom: 10px;
   text-align: center;
+  width: 100%;
+  font-size: 10px;
   
 }
